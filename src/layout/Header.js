@@ -20,7 +20,7 @@ function Header() {
               <NavLink to={"/friends/add"}> ADDFRIEND</NavLink>
             </li>
             <li>
-              <a href="#">LOGOUT</a>
+              <a href="/">LOGOUT</a>
             </li>
           </ul>
         </nav>
