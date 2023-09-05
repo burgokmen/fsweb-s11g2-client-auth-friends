@@ -1,11 +1,8 @@
-import './App.css';
+import "./App.css";
+import MainPage from "./layout/Main";
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Client Auth Projesi: Friends</h1>
-    </div>
-  );
+  return <MainPage />;
 }
 
 export default App;
