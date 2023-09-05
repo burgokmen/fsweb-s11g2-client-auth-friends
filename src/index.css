@@ -43,3 +43,43 @@ header > div > h2 {
   text-decoration: none;
   color: whitesmoke;
 }
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-div > button {
+  margin: 2rem;
+  background-color: black;
+  color: whitesmoke;
+  width: 33%;
+}
+
+.login-div > input-box {
+  width: 33%;
+}
+
+.input-box {
+  background-color: black;
+  color: white;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+.not-found {
+  display: flex;
+  justify-content: center;
+}
+
+.text-bold {
+  font-weight: bold;
+}

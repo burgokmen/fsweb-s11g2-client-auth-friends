@@ -1,5 +1,9 @@
 import React from "react";
 
 export default function FriendsList() {
-  return <div>FriendsList</div>;
+  return (
+    <div>
+      <h1>Friends List</h1>
+    </div>
+  );
 }

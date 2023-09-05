@@ -19,6 +19,11 @@ function PageBody() {
       <Route path="/friends/add">
         <AddFriendsPage />
       </Route>
+      <Route path="*">
+        <div className="not-found" style={{ color: "red" }}>
+          <h1>404 - PAGE NOT FOUND!</h1>
+        </div>
+      </Route>
     </Switch>
   );
 }

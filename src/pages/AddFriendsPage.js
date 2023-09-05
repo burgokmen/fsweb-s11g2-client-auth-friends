@@ -1,7 +1,8 @@
 import React from "react";
+import AddFriend from "../components/AddFriend";
 
 function AddFriendsPage() {
-  return <div>AddFriendsPage</div>;
+  return <AddFriend />;
 }
 
 export default AddFriendsPage;

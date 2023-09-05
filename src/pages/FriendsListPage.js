@@ -1,7 +1,8 @@
 import React from "react";
+import FriendsList from "../components/FriendsList";
 
 function FriendsListPage() {
-  return <div>FriendsListPage</div>;
+  return <FriendsList />;
 }
 
 export default FriendsListPage;
