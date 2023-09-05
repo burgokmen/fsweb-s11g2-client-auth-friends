@@ -1,26 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
+import { FriendContext } from "../contexts/FriendContext";
 
 export default function FriendsList() {
-  const data = [
-    {
-      id: 4,
-      name: "Rachel Green",
-      age: 30,
-      email: "rachel@friends.com",
-    },
-    {
-      id: 5,
-      name: "Joey Tribbiani",
-      age: 34,
-      email: "joey@friends.com",
-    },
-  ];
-
+  const { friendData } = useContext(FriendContext);
   return (
     <div className="login-div">
       <h1 className="text-bold">Friends List</h1>
       <div>
-        {data.map((f) => (
+        {friendData.map((f) => (
           <p className="text-bold" key={f.id}>
             - {f.name} - {f.email}
           </p>
