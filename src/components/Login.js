@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom/";
 
@@ -14,8 +15,18 @@ export default function Login() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    localStorage.setItem("loginDataKey", JSON.stringify(loginData));
-    history.push("/friends");
+
+    axios
+      .post("http://localhost:9000/api/login", loginData)
+      .then((res) => {
+        console.log(res);
+
+        localStorage.setItem("token", res.data.token);
+        history.push("/friends");
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   };
 
   const onChangeFunc = (e) => {
