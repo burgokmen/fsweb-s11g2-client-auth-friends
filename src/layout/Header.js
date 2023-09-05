@@ -1,17 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom/";
 
 function Header() {
   return (
-    <div>
+    <header>
       <div>
         <h2>FRIENDS DATABASE</h2>
       </div>
       <div>
-        <nav className="nav-bar-header">
-          <ul></ul>
+        <nav>
+          <ul className="nav-bar-header">
+            <li>
+              <NavLink to={"/"}> LOGIN.</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/friends"}> FRIENDSLIST.</NavLink>
+            </li>
+            <li>
+              <NavLink to={"/friends/add"}> ADDFRIEND.</NavLink>
+            </li>
+            <li>
+              <a href="#">LOGOUT</a>
+            </li>
+          </ul>
         </nav>
       </div>
-    </div>
+    </header>
   );
 }
 

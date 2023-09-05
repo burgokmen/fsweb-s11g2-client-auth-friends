@@ -13,3 +13,33 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: double;
+}
+
+header > div > h2 {
+  padding: 2rem;
+}
+
+.nav-bar-header {
+  display: flex;
+  padding: 2rem;
+  list-style-type: none;
+}
+
+.nav-bar-header > li {
+  padding: 1rem;
+  border: 1px solid black;
+  margin: 1rem;
+  color: whitesmoke;
+  background-color: black;
+}
+
+.nav-bar-header > li > a {
+  text-decoration: none;
+  color: whitesmoke;
+}
