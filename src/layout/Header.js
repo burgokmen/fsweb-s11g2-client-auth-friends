@@ -11,13 +11,13 @@ function Header() {
         <nav>
           <ul className="nav-bar-header">
             <li>
-              <NavLink to={"/"}> LOGIN.</NavLink>
+              <NavLink to={"/"}> LOGIN</NavLink>
             </li>
             <li>
-              <NavLink to={"/friends"}> FRIENDSLIST.</NavLink>
+              <NavLink to={"/friends"}> FRIENDSLIST</NavLink>
             </li>
             <li>
-              <NavLink to={"/friends/add"}> ADDFRIEND.</NavLink>
+              <NavLink to={"/friends/add"}> ADDFRIEND</NavLink>
             </li>
             <li>
               <a href="#">LOGOUT</a>
